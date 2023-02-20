@@ -1,0 +1,63 @@
+---------------------Installation & how to run flask--------------------------------------------
+
+To install Flask, open your terminal or command prompt and enter the following command:
+ "pip install Flask"
+Running Flask Code
+To run a Flask application, save the code in a Python file (e.g. app.py).
+Then, navigate to the directory where the file is saved using your terminal or command prompt.
+Enter the following command:
+ "export FLASK_APP=app.py"
+This command sets the name of the file containing the Flask application, so if your file has a different name, replace app.py with the correct name.
+Next, enter the following command to run the Flask application:
+  "flask run"
+After running the command, Flask will provide a URL where you can access the running application in your web browser (e.g. http://127.0.0.1:5000/).
+
+
+------------Flask application in a production environment--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Note: If you are running the Flask application in a production environment.
+      It is recommended to use a production-ready web server such as uWSGI or Gunicorn instead of the built-in Flask web server only used in linux/mac.
+Sure, to use gunicorn with Flask, you need to install gunicorn first:
+          "pip install gunicorn"
+Then you can run your Flask app with gunicorn using the following command:
+            "gunicorn app:app"
+where app is the name of your Flask application (in this case it is app) and the second app refers to the name of the Flask instance (in this case it is app).
+
+To run gunicorn with multiple worker processes, you can specify the number of workers with the -w flag:
+         " gunicorn -w 4 app:app"
+
+This will run your Flask app with 4 worker processes. You can adjust the number of workers as per your requirements.
+
+Note that you should replace app:app with the correct name of your Flask application and instance if they are named differently.
+
+
+------------------------------Flask Code-----------------------------------------------
+A basic Flask application consists of two parts: the Flask application instance, and views.
+The Flask application instance is an object of the Flask class, and views are functions that handle requests made to the application.
+
+
+-------------------------Module Installation-----------------------------------------------------------------------------------------------------------------------------
+
+The given Flask code already has all the required modules imported. But in general, here are the steps to import modules in a Flask application:
+
+Open the command prompt/terminal and navigate to the project directory.
+
+Create a virtual environment using the following command:
+       "python -m venv myenv"
+where "myenv" can be replaced with any name of your choice.
+
+Activate the virtual environment using the following command:
+For Windows:
+           "myenv\Scripts\activate"
+For Mac/Linux:
+bash      "source myenv/bin/activate"
+Install the required modules using the following command:
+         "pip install <module-name>"
+Replace "<module-name>" with the name of the module that you want to install.
+
+Import the required modules in your Flask application using the "import" statement. For example:
+               "from flask import Flask, render_template, request"
+Here, we have imported the Flask class, render_template function, and request object from the flask module.
+
+Note: In some cases, you may need to install additional modules that are required by the modules you are using in your Flask application.
+In such cases, you can install them using the "pip" command as described in steps above.

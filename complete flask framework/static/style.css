@@ -1,0 +1,62 @@
+/* Reset default margin and padding for all elements */
+* {
+    margin: 10;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Set background color for the body */
+  body {
+    background-color: #f2f2f2;
+  }
+  
+  /* Center the form container */
+  .container {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #999;
+  }
+  
+  /* Style the form header */
+  .container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Style the form labels */
+  label {
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  /* Style the form input fields */
+  input {
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Style the form submit button */
+  button {
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #270705;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Style the form submit button on hover */
+  button:hover {
+    background-color: #000000;
+  }

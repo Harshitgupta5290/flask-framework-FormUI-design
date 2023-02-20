@@ -1,0 +1,47 @@
+<!-- HTML code for Quick Award form -->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../static/style.css" />
+    <title>Quick Award Form</title>
+  </head>
+  <body>
+    <!-- Main content -->
+    <div class="content">
+      <!-- Container for the form -->
+      <div class="container">
+        <h2>Quick Award !</h2>
+        <form id="/form" method="post" action="/Create_Credential">
+         <hr />
+          <div class="form-group">
+            <label for="name">Name of the Awardee</label>
+            <!-- Input field for name -->
+            <input
+              type="name"
+              class="form-control"
+              id="name"
+              name="name"
+              placeholder="Your name"
+              name="name"
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Awardee's Email</label>
+            <!-- Input field for email -->
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              name="email"
+              placeholder="Your email"
+              name="email"
+            />
+          </div>
+          <!-- Submit button for the form -->
+          <button type="submit" class="btn btn-primary">Award</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
